@@ -52,6 +52,7 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="kisiler.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
@@ -80,9 +81,17 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\RealEstate.DataAccessLayer\RealEstate.DataAccessLayer.csproj">
-      <Project>{37e996e7-fc01-45f0-8bfb-3fdd90bab696}</Project>
-      <Name>RealEstate.DataAccessLayer</Name>
+    <ProjectReference Include="..\RealEstate.BusinessLayer\RealEstate.BusinessLayer.csproj">
+      <Project>{cd675bd0-da03-43c0-b7f9-6a622dfc8ce4}</Project>
+      <Name>RealEstate.BusinessLayer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\RealEstate.EntityLayer\RealEstate.EntityLayer.csproj">
+      <Project>{fb1083ca-5815-44d2-a656-a6d534e48984}</Project>
+      <Name>RealEstate.EntityLayer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\RealEstate.FacadeLayer\RealEstate.FacadeLayer.csproj">
+      <Project>{150015da-50aa-4771-869a-591c9a2e8cb5}</Project>
+      <Name>RealEstate.FacadeLayer</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

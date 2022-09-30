@@ -6,6 +6,8 @@ using System.Threading.Tasks;
 
 namespace RealEstate.BusinessLayer
 {
+    //İşlemlerin yapılmadan önce kontrollerin sağlandığı katman
+
     public class Class1
     {
     }

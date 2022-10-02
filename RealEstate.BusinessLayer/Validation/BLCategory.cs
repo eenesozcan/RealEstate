@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace RealEstate.BusinessLayer.Validation
 {
@@ -24,7 +25,8 @@ namespace RealEstate.BusinessLayer.Validation
             }
             else
             {
-                // hata mesajları
+                MessageBox.Show("Girilen değer uygun değil", "Hata-Validation");
+
             }
         }
 
@@ -36,7 +38,8 @@ namespace RealEstate.BusinessLayer.Validation
             }
             else
             {
-                // hata mesajları
+                MessageBox.Show("ID bilgisi hatalı", "Hata-Validation");
+
             }
         }
 
@@ -48,7 +51,7 @@ namespace RealEstate.BusinessLayer.Validation
             }
             else
             {
-                // hata mesajları
+                MessageBox.Show("Güncellenen değer uygun değil", "Hata-Validation");
             }
         }
     }
